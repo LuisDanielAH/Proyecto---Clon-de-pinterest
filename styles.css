@@ -1,0 +1,118 @@
+.pinterest-icon{
+    width: 65%;
+    height: auto;
+    margin-left: 1%;
+    margin-right: 0% ;
+   /*border-color: brown;*/
+   border-right:0% ;
+}
+
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    margin-top: 0%;
+    /*border: 1px solid yellow;*/
+}
+
+li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    list-style: none;
+    margin-top: 0.5%;
+    /*border: 1px solid blue;*/
+}
+
+li:first-child {
+    margin-right: -50%;
+    margin-left: -10%;
+}
+
+.card-image{
+    border-radius: 5%;
+    
+}
+
+.card-image:hover{
+    filter: brightness(0.75);
+    opacity: 0.7 ease;
+    transform: scale(1.018);
+    cursor: zoom-in;
+}
+
+/*.card-image:hover::after{
+    content: url(https://cdn-icons-png.flaticon.com/512/7579/7579711.png);
+    position: absolute;
+    top: 25;
+    right: 0;
+    width: 15px;
+    height: auto;
+}*/
+
+#galeria {
+    margin:auto;
+    width:100%;
+   
+    column-count: 6;
+    column-gap: 10px;
+    margin-bottom: 16px;
+}
+
+@media (max-width: 1465px) {
+    #galeria{
+        column-count: 5;
+    }
+}
+
+@media (max-width: 1229px) {
+    #galeria{
+        column-count: 4;
+    }
+
+    li:first-child {
+        margin-right: -56%;
+        
+    }
+}
+
+@media (max-width: 992px) {
+    #galeria{
+        column-count: 3;
+    }
+
+    li:first-child {
+        margin-right: -65%;
+        margin-left: 1%;
+    }
+
+    .oculto{
+        display: none;
+    }
+}
+
+@media (max-width: 758px) {
+    #galeria{
+        column-count: 2;
+    }
+
+    .oculto{
+        display: none;
+    }
+    
+    .oculto2{
+        display: none;
+    }
+
+
+}
+
+@media (max-width: 496px) {
+    #galeria{
+        column-count: 1;
+    }
+}
